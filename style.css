@@ -16,7 +16,6 @@ body {
   position: relative;
   width: 280px;
   height: 280px;
-  background: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,4 +34,10 @@ body {
   color: #333;
   cursor: pointer;
   font-size: 2em;
+  transition: 1.2s;
+}
+
+.menu.active .toggle {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #fff;
 }
